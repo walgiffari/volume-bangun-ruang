@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<form>
+<code>
+  <span class="a">Ini</span><span class="b"> Adalah</span><span class="c"> Soal</span><span class="d"> Dari</span><span class="e"> Pak</span><span class="f"> Dosen</span>
+  <br>
+  <br>
+<input type="text" id="angka1" size="8" placeholder="Angka Pertama" style="width: 90px;">
+<button type="button" id="operator" style="pointer-events: none;">+</button>
+<input type="text" id="angka2" size="8" placeholder="Angka Kedua" style="width: 80px;"> =
+<input type="text" id="hasil" size="3" placeholder="Hasil" style="width: 50px; text-align: center;">
+
+
+<span style="color: rgb(121, 48, 216);">Silahkan Klik Tombol Ini Untuk Mengeksekusi -> </span>
+<button type="button" id="operator" onclick="tambah()">+</button>
+<button type="button" id="operator" onclick="kurang()">-</button>
+<button type="button" id="operator" onclick="kali()">*</button>
+<button type="button" id="operator" onclick="bagi()">/</button>
+</code>
+</form>
+
+
+<code>
+<br>
+<br>
+<br>
+<br>
+<span class="a">Contoh</span><span class="b"> Soal</span><span class="c"> Volume</span><span class="d"> Bangun</span><span class="e"> Ruang</span>
+
+<form>
+  <div class="container">
+    <p class="nomor">1.</p>
+    <img src="/img-bangun/balok.png" class="balok" alt="">
+    <div class="wadah-deskripsi">
+      <p class="deskripsi">Ada sebuah balok yang ingin saya hitung dengan masing-masing Panjang, Lebar dan Tinggi, sebagai berikut:</p>
+      <div class="data-perhitungan">
+      <div class="data-1">
+        <label style="margin-left: 10px;">Panjang</label>
+        <input type="text" id="balok1">
+      </div>
+      <div class="data-2">
+        <label style="margin-left: 10px;">Lebar</label>
+        <input type="text" id="balok2">
+      </div>
+      <div class="data-2">
+        <label style="margin-left: 10px;">Panjang</label>
+        <input type="text" id="balok3" style="margin: 0 2px;">
+      </div>
+    </div> 
+      <div>
+  <button type="button" onclick="balok()" style="width: 100px; height: 50px; margin: 0px 97px;">Check Hasil</button>
+</div>
+  </div>
+</div>
+</form>
+
+<form>
+<div class="container">
+  <p class="nomor">2.</p>
+  <img src="/img-bangun/tabung.png" class="balok" alt="" style="margin-bottom: 20px;">
+      <div class="wadah-deskripsi">
+            <p class="deskripsi">Ada sebuah tabung yang ingin saya hitung dengan masing-masing Jari-jari dan Tinggi, sebagai berikut:</p>
+          <div class="data-perhitungan">
+            <div class="data-1">
+            <label style="margin-left: 10px;">Jari-Jari</label>
+            <input type="text" id="tabung1">
+            </div>
+            <div class="data-2">
+            <label style="margin-left: 10px;">Jari-Jari</label>
+            <input type="text" style="margin: 0 0px;" id="tabung2">
+            </div>
+            <div class="data-3">
+            <label style="margin-left: 10px;">Tinggi</label>
+            <input type="text" style="margin: 0 24px;" id="tabung3">
+            </div>
+          </div> 
+      <div>
+  <button type="button" onclick="tabung()" style="width: 100px; height: 50px; margin: 0px 112px;">Check Hasil</button>
+</div>
+      </div>
+</div>
+</form>
+
+<form>
+<div class="container">
+  <p class="nomor">3.</p>
+  <img src="/img-bangun/bola.png" class="balok" alt="" style="margin-bottom: 20px;">
+      <div class="wadah-deskripsi">
+            <p class="deskripsi">Ada sebuah bola yang ingin saya hitung dengan masing-masing Jari-jari sebagai berikut:</p>
+          <div class="data-perhitungan">
+            <div class="data-1">
+            <label style="margin-left: 10px;">Jari-Jari</label>
+            <input type="text" id="bola1">
+            </div>
+            <div class="data-2">
+            <label style="margin-left: 10px;">Jari-Jari</label>
+            <input type="text" style="margin: 0 0px;" id="bola2">
+            </div>
+            <div class="data-3">
+            <label style="margin-left: 10px;">Jari-Jari</label>
+            <input type="text" style="margin: 0 0px;" id="bola3">
+            </div>
+          </div> 
+          <div>
+  <button type="button" onclick="bola()" style="width: 100px; height: 50px; margin: 0px 112px;">Check Hasil</button>
+</div>
+      </div>
+</div>
+</form>
+
+
+<form>
+<div class="container">
+  <p class="nomor">4.</p>
+  <img src="/img-bangun/prisma.jpeg" class="balok" alt="" style="margin-bottom: 20px;">
+      <div class="wadah-deskripsi">
+            <p class="deskripsi">Ada sebuah prisma segitiga yang ingin saya hitung dengan masing-masing tinggi alas, panjang alas, dan tinggi kerucut, sebagai berikut:</p>
+          <div class="data-perhitungan">
+            <div class="data-1">
+            <label style="margin-left: 10px;">Tinggi Alas</label>
+            <input type="text" style="margin: 0 20px;" id="prisma1">
+            </div>
+            <div class="data-2">
+            <label style="margin-left: 10px;">Panjang Alas</label>
+            <input type="text" style="margin: 0 12px;" id="prisma2">
+            </div>
+            <div class="data-3">
+            <label style="margin-left: 10px;">Tinggi Prisma</label>
+            <input type="text" style="margin: 0 4px;" id="prisma3">
+            </div>
+          </div> 
+            <div>
+  <button type="button" onclick="prisma()" style="width: 100px; height: 50px; margin: 0px 146px;">Check Hasil</button>
+</div>
+      </div>
+</div>
+</form>
+
+<form>
+<div class="container">
+  <p class="nomor">5.</p>
+  <img src="/img-bangun/kerucut.jpeg" class="balok" alt="" style="margin-bottom: 20px;">
+      <div class="wadah-deskripsi">
+            <p class="deskripsi">Ada sebuah kerucut yang ingin saya hitung dengan masing-masing jari-jari alas, dan tinggi kerucut, sebagai berikut:</p>
+          <div class="data-perhitungan">
+            <div class="data-1">
+            <label style="margin-left: 10px;">Jari-Jari Alas</label>
+            <input type="text" style="margin: 0 4px;" id="kerucut1">
+            </div>
+            <div class="data-2">
+            <label style="margin-left: 10px;">Jari-Jari Alas</label>
+            <input type="text" style="margin: 0 4px;" id="kerucut2">
+            </div>
+            <div class="data-3">
+            <label style="margin-left: 10px;">Tinggi Kerucut</label>
+            <input type="text" style="margin: 0 4px;" id="kerucut3">
+            </div>
+          </div> 
+<div>
+  <button type="button" onclick="kerucut()" style="width: 100px; height: 50px; margin: 0px 155px;">Check Hasil</button>
+</div>
+      </div>
+</div>
+</code>
+</form>
+
+
+<script type="text/javascript">
+
+  document.getElementById("operator").innerHTML='&#9829';
+  function tambah()
+  {
+    document.getElementById("operator").innerHTML="+";
+    var angka1 = parseInt(document.getElementById("angka1").value);
+    var angka2 = parseInt(document.getElementById("angka2").value);
+    document.getElementById("hasilhasil").value=angka1+angka2;
+  }
+
+  function kurang() 
+  {
+    document.getElementById("operator").innerHTML="-";
+    var angka1 = parseInt(document.getElementById("angka1").value);
+    var angka2 = parseInt(document.getElementById("angka2").value);
+    document.getElementById("hasil").value=angka1-angka2;
+  }
+
+  function kali()
+  {
+    document.getElementById("operator").innerHTML="*";
+    var angka1 = parseInt(document.getElementById("angka1").value);
+    var angka2 = parseInt(document.getElementById("angka2").value);
+    document.getElementById("hasil").value=angka1*angka2;
+  }
+
+  function bagi()
+  {
+    document.getElementById("operator").innerHTML="/";
+    var angka1 = parseInt(document.getElementById("angka1").value);
+    var angka2 = parseInt(document.getElementById("angka2").value);
+    document.getElementById("hasil").value=angka1/angka2;
+  }
+
+
+</script>
+<script src="/js/balok.js"></script>
+<script src="/js/tabung.js"></script>
+<script src="/js/bola.js"></script>
+<script src="/js/prisma.js"></script>
+<script src="/js/kerucut.js"></script>
+</body>
+</html>
